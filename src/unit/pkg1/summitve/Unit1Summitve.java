@@ -19,10 +19,12 @@ Double Product =(doubleOne * doubleTwo);
 Double Quontient = (doubleOne / doubleTwo);       
 
 //Convert users name to Caps
+int space = fullName.indexOf(" ");
+fullName= fullName.substring(0,space);
 String fullNameInCaps = fullName.toUpperCase(); 
 
 //We output to users
-System.out.println("Your name in caps is "+fullNameInCaps);
+System.out.println("Your first name in caps is "+fullNameInCaps);
 System.out.println("The sum is " + sum);
 System.out.println("the Difference is "+Difference);
 System.out.println("The Product is "+Product);
